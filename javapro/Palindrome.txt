@@ -1,4 +1,4 @@
-
+// this is Palindrome Program
 import java.util.Scanner; // 454  121   23632   898  78987   
 class PalindromeNumber
 {
@@ -9,11 +9,10 @@ class PalindromeNumber
         System.out.println("Enter a Number:");
         num = sc.nextLong();
         
-       for(i=num;   i>0;    i=i/10)
+       for(i=num; i>0;  i=i/10)
        {
            m = i % 10;
-           rev=rev*10+m;
-           
+           rev=rev*10+m;           
        }
         if(rev==num)
         System.out.println("Entered Number: = "+num+" is a Palindrome");
