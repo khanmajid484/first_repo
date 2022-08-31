@@ -1,0 +1,23 @@
+
+import java.util.Scanner; // 454  121   23632   898  78987   
+class PalindromeNumber
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+         long i,num,rev = 0,m,n;
+        System.out.println("Enter a Number:");
+        num = sc.nextLong();
+        
+       for(i=num;   i>0;    i=i/10)
+       {
+           m = i % 10;
+           rev=rev*10+m;
+           
+       }
+        if(rev==num)
+        System.out.println("Entered Number: = "+num+" is a Palindrome");
+        else
+        System.out.println("Entered Number: = "+num+" is not a Palindrome");
+    }
+}
